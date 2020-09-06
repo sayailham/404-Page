@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+:root {
+	--font: 'Poppins', sans-serif;
+
+	--primary-color: #333333;
+	--grey: #4F4F4F;
+
+	--text-xs: 0.75rem;
+	--text-sm: 0.875rem;
+	--text-md: 1rem;
+	--text-lg: 1.5rem;
+
+	--space-sm: 0.5rem;
+	--space-md: 1rem;
+	--space-lg: 2rem;
+}
+
+html,
+body,
+header,
+main,
+h1,
+h2,
+h3,
+h4,
+h5,
+footer {
+	margin: 0;
+	padding: 0;
+}
+button {
+	border: none;
+}
+a {
+	text-decoration: none;
+}
+body {
+	font-family: var(--font);
+}
+
+.container {
+	width: 100%;
+}
+
+header {
+	margin: var(--space-lg) var(--space-lg);
+	color: var(--primary-color);
+}
+
+main {
+	width: 100%;
+	height: 72vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 4rem;
+}
+
+main img {
+	max-width: 40%;
+	width: 40%;
+}
+.message__page {
+	margin: var(--space-md) var(--space-md);
+	max-width: 580px;
+	width: 100%;
+}
+.message__page h1 {
+	font-size: 64px;
+	color: var(--primary-color);
+}
+
+.message__page p {
+	max-width: 440px;
+	width: 100%;
+	font-size: 24px;
+	color: var(--grey);
+	line-height: 2;
+}
+
+.message__page button {
+	background-color: var(--primary-color);
+	color: #fff;
+	padding: var(--space-md) var(--space-md);
+	cursor: pointer;
+	font: inherit;
+	display: flex;
+}
+
+footer {
+	margin-top: 4rem;
+	text-align: center;
+}
+
+@media (max-width: 600px) {
+	main {
+		display: block;
+		height: auto;
+		margin-bottom: 3rem;
+	}
+	main img {
+		max-width: 100%;
+		width: 100%;
+	}
+	.message__page button {
+		margin: 2rem auto 2rem auto;
+	}
+}
